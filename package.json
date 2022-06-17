@@ -1,0 +1,16 @@
+{
+  "name": "mern-stack-todo-app-for-wingieenuygun-bootcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "ernemmez",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.1"
+  }
+}

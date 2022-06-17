@@ -1,0 +1,99 @@
+.todo-list{
+    list-style-type: none;
+    padding: .5rem;
+    width: 97%;
+    margin-top: 1rem;
+    text-align: left;
+    min-height: 328px;
+
+    li {
+        width: 100%;
+        padding: .5rem;
+        margin: 1rem;
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        flex: row;
+        justify-content: space-between;
+        align-items: center;
+        .action-buttons{
+            width: 5%;
+        }
+        .todo-content{
+            width: 95%;
+            .title{
+                font-weight: bold;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                label{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+                span{
+                    color: #a8a8a8;
+                    font-size: .7rem;
+                    margin-left: 1rem;
+                    text-decoration: none !important;
+                }
+            }
+        }
+        .dtbc{
+            color: #a8a8a8;
+            font-size: .7rem;
+            margin-left: 1rem;
+            text-decoration: none !important;
+            float: right;
+        }
+        .text{
+            font-size: 1rem;
+            text-indent: 1rem;
+            margin-bottom: .7rem;
+        }
+        .info-text{
+            color: #a8a8a8;
+            font-size: .8rem;
+            margin-left: 1rem;
+            
+            .by-username{
+                color: #2020db;
+                font-weight: bold;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .dtbc{
+                text-align: right;
+            }
+        }
+
+    }
+    .completed{
+        text-decoration: line-through;
+        color: #118f11;
+    }
+    .icon{
+        border: none;
+        font-size: 18px;
+        float: right;
+        background: transparent;
+        padding: .1rem;
+        margin-right: .5rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .head{
+        width: 100%;
+        margin-bottom: .2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .buttons{
+            .btn{
+                margin:.3rem;
+            }
+        }
+    }
+}

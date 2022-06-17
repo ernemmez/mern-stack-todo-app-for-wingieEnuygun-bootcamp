@@ -1,0 +1,48 @@
+.header{
+    background: transparent;
+    width: 99.8%;
+    margin: auto;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 11px -1px rgba(128,128,128,0.7);
+    -moz-box-shadow: 0px 0px 11px -1px rgba(128,128,128,0.7);
+    box-shadow: 0px 0px 11px -1px rgba(128,128,128,0.7);
+    color: #1B2430;
+    .item{
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: .4rem;
+        padding: .2rem;
+        position: relative;
+
+        h3{
+            margin-left: .5rem;
+            color: #1B2430;
+        }
+        .username{
+            margin: .5rem;
+        }
+        .user-avatar{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .user-options{
+            background: #fff;
+            z-index: 10;
+            width: 200px;
+            padding: 1rem;
+            position: absolute;
+            top:64px;
+            right: -5px;
+            -webkit-box-shadow: 0px 0px 11px -1px rgba(128,128,128,0.7);
+            -moz-box-shadow: 0px 0px 11px -1px rgba(128,128,128,0.7);
+            box-shadow: 0px 0px 11px -1px rgba(128,128,128,0.7);
+        }
+    }
+}
